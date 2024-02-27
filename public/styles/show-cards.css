@@ -1,0 +1,46 @@
+.card-container {
+    perspective: 500px;
+}
+
+.card-container {
+    margin: 0 auto;
+    text-align: center; /* Optional for horizontal text centering */
+}
+
+.card-flip {
+    width: 500px;
+    height: 320px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+#front {
+    font-size: 35px;
+}
+
+#back {
+    font-size: 24px;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+.flipped {
+    transform: rotateY(180deg);
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Definition & Translation</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/styles/facts.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand ml-3" href="/">
+        Cards
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/section/select">Create cards</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/section/create">Add new sections</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/facts">Facts</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-danger btn-sm my-1 ml-1" href="/logout">Logout</a>
+            </li>
+        </ul>
+    </div>
+  </nav>
+
+  <div class="row justify-content-center text-center mt-5">
+    <div class="col-6">
+      <div class="card">
+        <img class="card-img-top" src="/img/schema.jpg" height="400px" width="450px" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Fact of the Day</h5>
+          <p id="definition">Loading...</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="card">
+        <img class="card-img-top" src="/img/quote-icon-logo-design-template-vector.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Quote of the Day</h5>
+          <p id="quote">Loading...</p>
+        </div>
+      </div>
+    </div>
+    <button id="fact-button" class="btn btn-info my-3 btn-lg">Get A fact</button>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.7.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="/javascripts/definition.js"></script>
+</body>
+</html>

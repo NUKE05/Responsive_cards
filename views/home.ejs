@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/home.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand ml-3" href="/">
+            Daily
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item ml-2">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item ml-2">
+                    <a class="nav-link" href="#hero1">Details</a>
+                </li>
+                    <a class="nav-link" href="/login">Login</a>
+                </li>
+                <li class="nav-item ml-2">
+                    <a class="btn btn-primary btn-sm my-1" href="/register">Sign Up for Free</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero-section text-dark text-center d-flex align-items-center justify-content-center my-3 ml-2" id="hero">
+        <div class="container">
+            <h1 class="display-1"><span class="text-info">Daily</span>. Gain an important knowledge every day</h1>
+            <p class="lead my-4">The <span class="text-primary">Daily</span> is a site that will help you learn new terminology. You can use it to remember formulas, translations or meanings. You can also receive interesting information and quotes from great people. Let's create new knowledge together.</p>
+            <div class="my-2">
+                <a href="/login" class="btn btn-info btn-lg me-4">Get Strated</a>
+                <a href="/#hero1" class="btn btn-outline-info btn-lg">More details</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="hero-section" id="hero1">
+        <h1 class="display-1">Create new cards</h1>
+        <div class="container">
+            <img src="/img/card.png" class="hero-image mb-4" alt="Responsive screenshot">
+            <p class="lead">Create cards that have the term on the front and the definition on the back. Once you create it, you can use it to remember information. If you need to change or delete it, you can go to the changes menu in order to do this</p>
+                <a href="/login" class="btn btn-info btn-block btn-lg me-4">Get Strated</a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.7.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

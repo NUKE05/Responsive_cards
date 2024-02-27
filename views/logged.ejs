@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!--<link rel="stylesheet" href="/styles/logged.css">-->
+</head>
+
+<body id="module1" class="bg-gray-200 flex items-center justify-center h-screens">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand ml-3" href="/">
+        Cards
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/section/select">Create cards</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/section/create">Add new sections</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/facts">Facts</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-danger btn-sm my-1 ml-1" href="/logout">Logout</a>
+            </li>
+        </ul>
+    </div>
+  </nav>
+
+  <section class="hero-section text-dark text-center d-flex align-items-center justify-content-center my-3 ml-2" id="hero">
+    <div class="container">
+        <h1 class="display-1"><span class="text-info">Daily</span>. Gain important knowledge every day</h1>
+        <p class="lead my-4">The <span class="text-primary">Daily</span> is a site that will help you learn new terminology. You can use it to remember formulas, translations or meanings. Let's create new knowledge together</p>
+    </div>
+  </section>
+  
+  <div class="row justify-content-center text-center">
+    <div class="col-sm-3">
+      <div class="card border-primary">
+        <div class="card-body">
+          <img width="64" height="64" class="mb-2" src="https://img.icons8.com/cotton/64/plus--v1.png" alt="plus--v1"/>
+          <h5 class="card-title">Create a new section</h5>
+          <p class="card-text">Create your own personal section. Let's create new knowledge together!</p>
+          <a href="/section/create" class="btn btn-primary btn-block">New Section</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card border-primary">
+        <div class="card-body">
+          <img width="64" height="64" class="mb-2" src="https://img.icons8.com/cotton/64/checked--v3.png" alt="checked--v3"/>
+          <h5 class="card-title">Select the section</h5>
+          <p class="card-text">Select the section you want to repeat or edit. Everything is at your discretion</p>
+          <a href="/section/select" class="btn btn-primary btn-block">Select the section</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card border-primary">
+        <div class="card-body">
+          <img width="64" height="64" class="mb-2" src="https://img.icons8.com/cotton/64/quill-pen.png" alt="quill-pen"/>
+          <h5 class="card-title">Facts of the Day</h5>
+          <p class="card-text">Get a fact and an inspirational quote that may be important as you move through day.</p>
+          <a href="/facts" class="btn btn-primary btn-block">Go to facts</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.7.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

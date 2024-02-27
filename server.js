@@ -89,6 +89,10 @@ app.get("/logged", isLogged, (req, res) => {
     res.render("logged");
 });
 
+app.get("/logged-admin", isLogged, (req, res) => {
+    res.render("logged-admin");
+});
+
 // Обработка Логина
 app.post('/login', (req, res, next) => {
     passport.authenticate('local', (err, user, info) => {
@@ -103,7 +107,7 @@ app.post('/login', (req, res, next) => {
                 return next(err);
             }
             if (user.role === "admin") {
-                return res.redirect('/admin');
+                return res.redirect('/logged-admin');
             } else {
                 return res.redirect('/logged');
             }

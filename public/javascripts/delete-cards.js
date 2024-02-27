@@ -19,7 +19,7 @@ function fetchCardsAndDisplay() {
                 deleteButton.className = 'btn btn-danger btn-sm';
                 deleteButton.setAttribute('data-word', card._id);
                 deleteButton.addEventListener('click', function() {
-                    deleteCard(card._id); // Assuming `word` is the identifier for a card
+                    deleteCard(card._id); 
                 });
 
                 const deleteCell = row.insertCell(2);
@@ -46,7 +46,7 @@ function deleteCard(wordId) {
         if (!response.ok) {
             throw new Error('Network response was not ok.');
         }
-        fetchCardsAndDisplay(); // Refresh the list of cards after deletion
+        fetchCardsAndDisplay(); 
     })
     .catch(error => {
         console.error('Error deleting card:', error);
@@ -68,7 +68,7 @@ function editCard(cardId, currentWord) {
             return;
         }
 
-        fetch(`/update-card/${cardId}`, { // Change this line
+        fetch(`/update-card/${cardId}`, {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ word: newWord, definition: newDefinition })

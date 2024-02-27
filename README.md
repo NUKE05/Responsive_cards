@@ -17,8 +17,8 @@ Routes:
 ```
 
 ## Admin Page: 
-Admin username: nurzhakhan
-Admin password: 12345678
+1.Admin username: nurzhakhan
+2.Admin password: 12345678
 
 ## Database connection: 
 Link: mongodb+srv://nurzhakhan:nuke@cluster.4lx28hl.mongodb.net/
